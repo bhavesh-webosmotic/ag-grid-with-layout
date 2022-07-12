@@ -1,0 +1,106 @@
+:root {
+  --side-nav-bg: #fff;
+  --side-nav-border: #e0e4ea;
+  --side-nav-color: #6b738e;
+  --scroll-thumb: #6b738e;
+  --side-nav-hover-color: #1f2744;
+  --side-nav-hover-bg: #e8ebf5;
+  --top-nav-bg: #fff;
+  --top-nav-border: #e0e4ea;
+  --top-nav-color: #343a40;
+  --light-font-color: #4b5372;
+  --top-logo-bg: #20bead;
+  --top-logo-color: #fff;
+  --body-color: #323b50;
+  --top-nav-search-control-bg: #f6f7ff;
+}
+
+#root {
+  flex-grow: 1;
+}
+
+body {
+  color: var(--body-color);
+  display: flex;
+  min-height: 100vh;
+}
+.top-nav {
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--top-nav-border);
+}
+.top-nav .nav-container {
+  background-color: var(--top-nav-bg);
+  height: 65px;
+  display: flex;
+  padding: 12px;
+}
+
+.nav-container .search-control {
+  border-width: 0;
+  text-indent: 10px;
+  border-radius: 4px;
+  background-color: var(--top-nav-search-control-bg);
+  width: 100%;
+}
+.nav-container .search-control:focus {
+  border-width: 0;
+  outline: none;
+}
+.side-bar .nav-logo {
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--top-logo-bg);
+  margin: 12px;
+  padding: 8px 12px;
+  color: var(--top-logo-color);
+  border-radius: 4px;
+}
+
+.side-bar {
+  width: 250px;
+  background-color: var(--side-nav-bg);
+  border-right: 1px solid var(--side-nav-border);
+}
+.side-bar .nav {
+  padding-top: 8px;
+  list-style: none;
+  display: flex;
+}
+.side-bar .nav .nav-item {
+  margin-bottom: 5px;
+  flex: 0 0 100%;
+  color: var(--side-nav-color);
+  padding: 16px 16px;
+  font-weight: 600;
+}
+.side-bar .nav .nav-item:hover,
+.side-bar .nav .nav-item.active {
+  color: var(--side-nav-hover-color);
+  background-color: var(--side-nav-hover-bg);
+}
+.center-content {
+  flex-grow: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-section {
+  text-align: center;
+  color: var(--light-font-color);
+  margin: 10px 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--top-nav-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--scroll-thumb);
+}

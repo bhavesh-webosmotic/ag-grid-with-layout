@@ -1,0 +1,54 @@
+/*
+CUSTOM AG-GRID CSS HERE
+MORE DOCUMENTATION HERE : https://www.ag-grid.com/javascript-data-grid/themes/
+*/
+
+.ag-theme-alpine {
+  --ag-alpine-active-color: #1f2744;
+  --ag-header-height: 30px;
+  --ag-header-foreground-color: #4b5372;
+  --ag-foreground-color: #4b5372;
+  --ag-header-background-color: #f9faff;
+  --ag-row-hover-color: #e8ebf5;
+  --ag-control-panel-background-color: #e8ebf5;
+  --ag-selected-row-background-color: #e8ebf5;
+  --ag-column-hover-color: #e8ebf5;
+  --ag-border-color: #e0e4ea;
+  --ag-odd-row-background-color: #f9faff;
+  --ag-range-selection-background-color: #cdd1e0;
+  --ag-range-selection-border-color: #b7bdd4;
+  --ag-range-selection-background-color-2: #cdd1e0;
+  --ag-range-selection-background-color-3: #cdd1e0;
+  --ag-range-selection-background-color-4: #cdd1e0;
+  --ag-background-color: #fff;
+  --ag-input-focus-border-color: #e0e4ea;
+  --ag-checkbox-unchecked-color: #6b738e;
+  --ag-chip-background-color: #cfd5e9;
+  --ag-checkbox-background-color: var(--ag-background-color);
+  --ag-checkbox-checked-color: #6b738e;
+  --ag-subheader-background-color: #cfd5e9;
+}
+.ag-theme-alpine .ag-header {
+  font-family: "Segoe UI";
+}
+.ag-theme-alpine .ag-header-group-cell {
+  font-weight: normal;
+  font-size: 14px;
+}
+.ag-theme-alpine .ag-header-cell {
+  font-weight: normal;
+  font-size: 12px;
+}
+.ag-theme-alpine .ag-status-bar input[type="button"] {
+  background-color: #20bead;
+  color: #fff;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.ag-theme-alpine .ag-status-bar .ag-react-container {
+  display: flex;
+  align-items: center;
+}
+.ag-theme-alpine .ag-tool-panel-wrapper {
+  padding: 6px;
+}
